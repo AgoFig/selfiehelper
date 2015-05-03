@@ -1,0 +1,10 @@
+<h1>Headshot Demo</h1>
+<%= button_to "HeadshotDemo", action: "list" %>
+
+<%= headshot_default_config(Rails.application.config.session_options[:key], headshot_capture_path) %>
+
+<%= headshot_camera %>
+
+<br/>
+
+<%= headshot_snap_button %>
